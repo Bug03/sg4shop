@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>SG4Store | Ecommerce Website Design </title>
+</head>
+
+<body>
+        
+            <header class="header">
+                <div class="header-container">
+                    <div class="header__navbar">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="./assest/images/web/sg4-removebg-preview.png" alt="logo" width="125px">
+                            </a>
+                        </div>
+                            <nav class="navbar">
+                                <ul id="MenuItems" class="header__navbar-list">
+                                    <li><a href="index.html">TRANG CHỦ</a></li>
+                                    <li><a href="products-shirt.html">ÁO</a></li>
+                                    <li><a href="products-pants.html">QUẦN</a></li>
+                                    <li><a href="products-accessories.html">PHỤ KIỆN</a></li>
+                                    <li><a href="">LIÊN HỆ</a></li>
+                                </ul>
+                            </nav>
+                        <a href="account.html"><button style="border:none" class="icon-user"><img src="/assest/images/icons8-user-50.png"  width="30px" height="30px""></button></a>
+                        <a href="cart.html"><button style="border:none" ><img src="/assest/images/icons8-shopping-cart-50.png" width="30px" height="30px""></button></a>
+                        <button style="border:none" class="js-search" ><img src="/assest/images/icons8-search-50.png" width="30px" height="30px""></button>
+                        <img src="/assest/images/menu.png" class="menu-icon"
+                        onclick="menutoggle()">
+                    </div>
+                    
+    
+                    
+                </div>
+                <div class="slider">
+                    <img src="/assest/images/levent-slider.jpg" alt="hi">
+                </div>
+            </header>
+        
+
+        <!-- Featured Categories -->
+        <div class="categories" id="categories">
+            <div class="container">
+                <h2 class="products-title">LEVENTS® COLLECTION FALL/ WINTER 2022</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/assest/images/tên spham-màu nha/outfits/Thiết kế chưa có tên - 2022-11-23T134504.207.png" alt="">
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate-XL">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="/assest/images/tên spham-màu nha/outfits/Thiết kế chưa có tên - 2022-11-23T134816.807.png" alt="">
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate-XL">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="/assest/images/tên spham-màu nha/outfits/Thiết kế chưa có tên - 2022-11-23T141803.557.png" alt="">
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate-XL">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- featured products -->
+        <div class="products">
+            <div class="container">
+                <h2 class="products-title">SẢN PHẨM NỔI BẬT</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="product-details.html"><img src="/assest/images/tên spham-màu nha/Tee/Logo 2.0 Tee _ Green.png" alt=""></a>
+                        <a href="product-details.html"><h4>Green Tee Logo 2.0</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-1.html"><img src="/assest/images/tên spham-màu nha/Outerwear/Crocodile Sweater _ Black.png" alt=""></a>
+                        <a href="product-details-1.html"><h4>Black Crocodile Sweater </h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-2.html"><img src="/assest/images/tên spham-màu nha/Quần nè/Shortpant _ Pink.png" alt=""></a>
+                        <a href="product-details-2.html"><h4>Classics Cuffed Sweatpants</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-3.html"><img src="/assest/images/tên spham-màu nha/Dép/Essential Slipper _ Green.png" alt=""></a>
+                        <a href="product-details-3.html"> <h4>Crystal Dress</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="products-title">SẢN PHẨM</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="product-details-4.html"><img src="/assest/images/tên spham-màu nha/Tee/Doraemon Cat Tee _ Grey.png" alt=""></a>
+                        <a href="product-details-4.html"><h4>Grey Doraemon Cat Tee</h4></a>
+                        
+                       
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-5.html"> <img src="/assest/images/tên spham-màu nha/Tee/Capsule Tee _ Pink.png" alt=""></a>
+                        <a href="product-details-5.html"><h4>Pink Capsule Tee</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$40.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-6.html"><img src="/assest/images/tên spham-màu nha/Tee/Logo 2.0 Tee _ Green.png" alt=""></a>
+                        <a href="product-details-6.html"><h4>Green Logo 2.0 Tee</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-7.html"><img src="/assest/images/tên spham-màu nha/Tee/Popular Tee _ Dark Teal.png" alt=""></a>
+                        <a href="product-details-7.html"><h4>Dark Popular Tee</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="product-details-8.html"><img src="/assest/images/tên spham-màu nha/Quần nè/Straight Pants _ Black.png" alt=""></a>
+                        <a href="product-details-8.html"><h4>Black Straight Pants</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$70.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-9.html"><img src="/assest/images/tên spham-màu nha/Quần nè/Khaki _ Beige.png" alt=""></a>
+                        <a href="product-details-9.html"><h4>Beige Khaki</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$70.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-10.html"> <img src="/assest/images/tên spham-màu nha/Dép/Essential Slipper _ Cream.png" alt=""></a>
+                        <a href="product-details-10.html"><h4>Cream Essential Slipper</h4></a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$30.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details-11.html"><img src="/assest/images/tên spham-màu nha/Dép/Essential Slipper _ Yellow.png" alt=""></a>
+                        <a href="product-details-11.html"><h4>Yellow Essential Slipper</h4></a>
+                       
+                       
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$40.00</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate ">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#" style="color: #fff ;">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------- offer -------->
+        <div class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="/assest/images/exclusive.png"  class = "offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available on SG4store</p>
+                        <h1>Smart Band 4</h1>
+                        <small>The Mi Smart Band 4 features a 39.9% larger ( than Mi Band 3) 
+                            AMOLED color full-touch display with adjustable brightness, 
+                            so everthing is clear as can be.
+                        </small>
+                        <a href="" class =" btn">Buy Now &#8594</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---------- testimonial: khach hang chung thuc ----------> 
+    <div class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="/assest/images/user-1.png">
+                    <h3>Huyền</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="/assest/images/user-2.png">
+                    <h3>Tuấn</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="/assest/images/user-3.png">
+                    <h3>Dương</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------- footer ----------->
+    <div class="footer" id="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Downloand Our App</h3>
+                    <p>Downloand App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="/assest/images/play-store.png">
+                        <img src="/assest/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/assest/images/web/sg4__3_-removebg-preview.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and
+                        Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Use full Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr> 
+            <p class ="copyright">Copyright 2020 - Easy Tutorials</p>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <header class="modal-header">
+                <h3 class="modal-title">TÌM KIẾM SẢN PHẨM</h3>
+            </header>
+            
+            <div class="modal-body">
+                <form action="" class="search-bar">
+                    <input type="text" name="" placeholder="search anything">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="search-extend">
+                    <select id="brandsearch">
+                        <option value="">Tất cả</option>
+                        <option value="Áo">Áo</option>
+                        <option value="Quần">Quần</option>
+                        <option value="Phụ kiện">Phụ kiện</option>
+                    </select>
+                    <div> 
+                        <input type="text" id="priceform" style="border:1px solid #ff523b" placeholder="Giá từ"> &mdash; 
+                        <input type="text" id="priceto" style="border:1px solid #ff523b" placeholder="Đến"></div>
+                    </div>
+                </div>
+                
+             
+        </div>
+    </div>
+
+
+
+    <!-- ---js for toggle menu ----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <!-- modal search jaavascript -->
+    <script>
+        const buyBtn = document.querySelector('.js-search');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+        function showSearch() {
+            modal.classList.add('open');
+        }
+        function hideSearch() {
+            modal.classList.remove('open');
+        }
+
+        buyBtn.addEventListener('click',showSearch);
+
+        modalClose.addEventListener('click',hideSearch);
+
+        modal.addEventListener('click',hideSearch);
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation();
+        })
+    </script>
+</body>
+
+</html>
