@@ -14,101 +14,129 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script defer src="./assest/js/login.js"></script>
     <title>All Products - Ngdank_shop</title>
 </head>
 
 <body>
+    <header class="header">
         <div class="header-container">
-            <div class="header__navbar">
-                <div class="header__logo">
-                    <a href="index.html"><img src="./assest/images/web/sg4-removebg-preview.png" alt="logo" width="125px"></a>
+            <div class="header__topnavbar" style="background-color: #000">
+                <div class="header-promotion">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>DAILY SALE UP TO 15% PLUSCLUB, COLORFUL PAINT TEE</span> 
                 </div>
-                <nav class="navbar">
-                    <ul id="MenuItems" class="header__navbar-list">
-                        <li><a href="index.html">TRANG CHỦ</a></li>
-                        <li><a href="products.html">ÁO</a></li>
-                        <li><a href="products-pants.html">QUẦN</a></li>
-                        <li><a href="products-accessories.html">PHỤ KIỆN</a></li>
-                        <li><a href="">LIÊN HỆ</a></li>
-                    </ul>
-                </nav>
-                <a href="account.html" class="icon-user"><img src="/assest/images/icons8-user-50.png" alt="" width="30px" height="30px"></a>
-                <a href="cart.html"><img src="/assest/images/icons8-shopping-cart-50.png" width="30px" height="30px" style="margin-right:20px"></a>
-                <a href=""><img src="/assest/images/icons8-search-50.png" width="30px" height="30px" alt=""></a>
-                <img src="/assest/images/menu.png" class="menu-icon" onclick="menutoggle()">
-            </div>
-        </div>
-        <!---- account-page  ----->
-        <div class="account-page">
-            <div class="account-container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn">
-                                <span onclick="login()">Đăng nhập</span>
-                                <span onclick="register()">Đăng kí</span>
-                                <hr id="Indicator" >
-                            </div>
-                            <form id="LoginForm">
-                                <input type="text" placeholder="Tài khoản">
-                                <input type="password" placeholder="Mật khẩu">
-                                <button type="submit" class="btn">Đăng nhập</button>
-                                <a href="" style="text-decoration: none; color:#555; font-size: 12px;">Bạn chưa có tài khoản 
-                                <span style="color:#ff523b" >Đăng ký</span></a>
-                            </form>
-                            <form id="RegisterForm">
-                                <input type="text" placeholder="Tài khoản">
-                                <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Mật khẩu">
-                                <button type="submit" class="btn">Đăng kí</button>
-                            </form>
+                
+                    <div class="header-user-name">
+                        <div class="header-login">
+                            <a href="./account.html"><p>LOGIN</p></a>
+                        </div>
+                        <div class="header-register">
+                            <a href="./account.html"><p>REGISTER</p></a>
                         </div>
                     </div>
-                </div>
+                
             </div>
+            <div class="header__navbar" id="myHeader">
+                <div class="header__logo">
+                    <a href="index.html"><img src="./assest/images/web/sg4-removebg-preview.png" alt="logo" width="125px">
+                    </a>
+                </div>
+                    <nav class="navbar">
+                        <ul id="MenuItems" class="header__navbar-list">
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="products-shirt.html">ÁO</a></li>
+                            <li><a href="products-pants.html">QUẦN</a></li>
+                            <li><a href="products-accessories.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </nav>
+                <a href="account.html"><button style="border:none" class="icon-user"><i class="fa-solid fa-user"></i></button></a>
+                <a href="cart.html"><button style="border:none" ><i class="fa-solid fa-cart-shopping"></i></button></a>
+                <button style="border:none" class="js-search" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                <img src="./assest/images/menu.png" class="menu-icon"
+                onclick="menutoggle()">
+            </div>
+            <div class="header_botnavbar">
+                <ul class="bot-nav-list">
+                    <li class="bot-nav-items">
+                        <a href="./aboutus.html">Về chúng tôi</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="./stores.html">Danh sách cửa hàng</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="#categories">Bộ sưu tập</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="">Offer</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+
+            
         </div>
-    
-    <!----------- footer ----------->
-    <div class="footer" id="footer">
-        <div class="footer-container">
+    </header>
+        <!---- account-page  ----->
+    <div class="account-page">
+        <div class="account-container">
             <div class="row">
-                <div class="footer-col-1">
-                    <h3>Downloand Our App</h3>
-                    <p>Downloand App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="/assest/images/play-store.png">
-                        <img src="/assest/images/app-store.png">
-                    </div>
+                <div class="col-2">
+                    <div class="login">
+                        <div class="container">
+                            <h2 class="text-center">Login</h2>
+                            <br>
+                            <form action=".//admin/product-admin.html" class="loginForm">
+                                <div class="input-group">
+                                    <label for="username" class="label">Username</label>
+                                    <input type="text" id="username" class="input">
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="input-group">
+                                    <label for="username" class="label">Password</label>
+                                    <input type="password" id="password" class="password">
+                                    <span class="error-message"></span>
+                                </div>
+                                <br>
+                                <button class="button" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div> 
                 </div>
-                <div class="footer-col-2">
-                    <img src="/assest/images/web/sg4__3_-removebg-preview.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and
-                        Benefits of Sports Accessible to the Many.
-                    </p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Use full Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
                 </div>
             </div>
-            <hr>
-            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+            
         </div>
     </div>
+   
+    
+    <!----------- footer ----------->
+    <div id="footer">
+        <img src="./assest/images/about/wave2.png" alt="" class="footer-img">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-4 footer-box">
+                    <img src="./assest/images/web/sg4__3_-removebg-preview.png" alt="">
+                    <p>Sự đầu tư từ chất lượng đóng gói, bao bì sản phẩm đến mỗi thước phim, hình ảnh cho tới cách làm chủ được nghệ thuật sắc màu và chỉn chu trong từng chi tiết đã đưa chúng tôi trở thành một trong những thương hiệu thời trang Streetwear được giới trẻ yêu thích, tin dùng hàng đầu tại Việt Nam.</p>
+                </div>
+                <div class="col-4 footer-box">
+                    <p><b> CONTACT US </b></p>
+                    <p><i class="ti ti-location-pin"></i>Việt Nam, Thành phố Hồ Chí Minh</p>
+                    <p><i class="ti ti-mobile"></i>+84 123456789</p>
+                    <p><i class="ti ti-email"></i>ddht@gmail.com</p>
+                </div> 
+                <div class="col-4 footer-box">
+                    <p><b> SUBSCRIBE NEWSLETTER </b></p>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    <button type="button" class="btn btn-footer">Subscribe</button>
+                </div>
+        </div>
+    </div>
+     <!-- Javascript -->
+     <!-- <script src="./assest/js/index.js"></script> -->
+
     <!-- ---js for toggle menu ----->
     <script>
         var MenuItems = document.getElementById("MenuItems");
@@ -125,7 +153,7 @@
     </script>
 
     <!-- js for toggle form -->
-    <script>
+    <!-- <script>
         var LoginForm = document.getElementById("LoginForm");
         var RegisterForm = document.getElementById("RegisterForm");
         var Indicator = document.getElementById("Indicator");
@@ -143,6 +171,22 @@
             Indicator.style.transform = "translateX(0px)";
         }
 
-    </script>
+    </script> -->
+    <!-- sticky -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+        
 </body>
 </html>

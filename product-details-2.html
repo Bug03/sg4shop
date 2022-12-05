@@ -14,71 +14,113 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>All Products - Ngdank_shop</title>
+    <title>SG4Store | Ecommerce Website Design</title>
 </head>
 
 <body>
+    <header class="header">
         <div class="header-container">
-            <div class="header__navbar">
-                <div class="header__logo">
-                    <img src="./assest/images/web/sg4-removebg-preview.png" alt="logo" width="125px">
+            <div class="header__topnavbar" style="background-color: #000">
+                <div class="header-promotion">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>DAILY SALE UP TO 15% PLUSCLUB, COLORFUL PAINT TEE</span> 
                 </div>
-                <nav class="navbar">
-                    <ul id="MenuItems" class="header__navbar-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="/assest/images/cart.png" width="30px" height="30px"></a>
-                <img src="/assest/images/menu.png" class="menu-icon" onclick="menutoggle()">
+                
+                    <div class="header-user-name">
+                        <div class="header-login">
+                            <a href="./account.html"><p>LOGIN</p></a>
+                        </div>
+                        <div class="header-register">
+                            <a href="./account.html"><p>REGISTER</p></a>
+                        </div>
+                    </div>
+                
             </div>
+            <div class="header__navbar" id="myHeader">
+                <div class="header__logo">
+                    <a href="index.html"><img src="./assest/images/web/sg4-removebg-preview.png" alt="logo" width="125px">
+                    </a>
+                </div>
+                    <nav class="navbar">
+                        <ul id="MenuItems" class="header__navbar-list">
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="products-shirt.html">ÁO</a></li>
+                            <li><a href="products-pants.html">QUẦN</a></li>
+                            <li><a href="products-accessories.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </nav>
+                <a href="account.html"><button style="border:none" class="icon-user"><i class="fa-solid fa-user"></i></button></a>
+                <a href="cart.html"><button style="border:none" ><i class="fa-solid fa-cart-shopping"></i></button></a>
+                <button style="border:none" class="js-search" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                <img src="./assest/images/menu.png" class="menu-icon"
+                onclick="menutoggle()">
+            </div>
+            <div class="header_botnavbar">
+                <ul class="bot-nav-list">
+                    <li class="bot-nav-items">
+                        <a href="./aboutus.html">Về chúng tôi</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="./stores.html">Danh sách cửa hàng</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="#categories">Bộ sưu tập</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="">Offer</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+
+            
         </div>
+    </header>
         <!-- Single product details -->
         <div class="container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="/assest/images/web1/web/Classics Cuffed Sweatpants/600X600/Thiết kế chưa có tên (7).png" width="100%" id = "productImg" >
+                    <img src="./assest/images/tên spham-màu nha/products-details/green-tee.jpg" width="100%" id = "productImg" >
 
                     <div class="small-img-row">
                         <div class="small-img-col">
-                            <img src="/assest/images/web1/web/Classics Cuffed Sweatpants/600X600/Thiết kế chưa có tên (7).png" width="100%" class="small-img"  >
+                            <img src="./assest/images/tên spham-màu nha/products-details/green-tee.jpg" width="100%" class="small-img"  >
                         </div>
                         <div class="small-img-col">
-                            <img src="/assest/images/web1/web/Classics Cuffed Sweatpants/600X600/Thiết kế chưa có tên (6).png" width="100%" class="small-img">
+                            <img src="./assest/images/tên spham-màu nha/products-details/yellow-tee.jpg" width="100%" class="small-img">
                         </div>
                         <div class="small-img-col">
-                            <img src="/assest/images/web1/web/Classics Cuffed Sweatpants/600X600/Thiết kế chưa có tên (5).png" width="100%" class="small-img" >
+                            <img src="./assest/images/tên spham-màu nha/products-details/red-tee.jpg" width="100%" class="small-img" >
                         </div>
                         <div class="small-img-col">
-                            <img src="/assest/images/web1/web/Classics Cuffed Sweatpants/600X600/Thiết kế chưa có tên (4).png" width="100%" class="small-img">
+                            <img src="./assest/images/tên spham-màu nha/products-details/black-tee.jpg" width="100%" class="small-img">
                         </div>
                     </div>
 
 
                 </div>
                 <div class="col-2">
-                    <p>Home / Pants</p>
-                    <h1>Classics Cuffed Sweatpants</h1>
-                    <h4>$50.00</h4>
+                    <p>Trang chủ / Áo</p>
+                    <h1>SG4Store® POPULAR LOGO 2.0 TEE/ <span id="name">Green</span></h1>
+                    <h4>300.000 VND</h4>
                     <select>
-                        <option>Select Size</option>
-                        <option>XXL</option>
+                        <option>Chọn Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
                         <option>XL</option>
-                        <option>Large</option>
-                        <option>Medium</option>
-                        <option>Small</option>
                     </select>
                     <input type="number" value="1">
-                    <a href="" class="btn">Add to Cart</a>
+                    <div href="" class="btn" onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
 
-                    <h3>Product Details <i class="fa-solid fa-indent"></i></h3>
+                    <h3>Chi tiết sản phẩm <i class="fa-solid fa-indent"></i></h3>
                     <br>
-                    <p>Give your summer wardrobe a style upgrade with the Puma Sport's 
-                        Active Pants. Team it with a pair of shorts for your morning
-                        workout or a denims for an evening out with the guys.
+                    <p>
+                        + SG4store® POPULAR LOGO 2.0 TEE
+                        MATERIAL: SG4 ORIGINAL – Phiên bản bề mặt vải không đổ lông mang cảm giác thoáng mát
+                        Sản phẩm thuộc bộ sưu tập Spring/ Summer 2022
                     </p>
                 </div>
             </div>
@@ -87,7 +129,7 @@
         <!-- title -->
         <div class="container">
             <div class="row row-2">
-                <h2>Related Products</h2>
+                <h2>Sản phẩm liên quan</h2>
                 <p>View More</p>
             </div>
         </div>
@@ -95,9 +137,9 @@
     <div class="products">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img src="/assest/images/web1/web/LONDON Slipstream Sneakers/1080x1440/Thiết kế chưa có tên (34).png    " alt="">
-                    <h4>Puma Slipstream</h4>
+                <div class="col-4 col-4_products">
+                    <img src="./assest/images/tên spham-màu nha/Tee/Map_Tee___Cream-removebg-preview.png" alt="">
+                    <h4>Cream Map Tee</h4>
                     <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -105,11 +147,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <p>$50.00</p>
+                    <p>300.000 VND</p>
                 </div>
-                <div class="col-4">
-                    <img src="/assest/images/web1/web/Crewneck Sweatshirt/1080x1440/Thiết kế chưa có tên (20).png" alt="">
-                    <h4>Crewneck Sweatshirt</h4>
+                <div class="col-4 col-4_products">
+                    <img src="./assest/images/tên spham-màu nha/Tee/Floral Tee _ Baby Blue.png" alt="">
+                    <h4>Blue Floral Tee</h4>
                     <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -117,11 +159,11 @@
                         <i class="fa-solid fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <p>$50.00</p>
+                    <p>300.000 VND</p>
                 </div>
-                <div class="col-4">
-                    <img src="/assest/images/web1/web/Hussle Mesh Shorts/1080x1440/Thiết kế chưa có tên (29).png" alt="">
-                    <h4>Hussle Mesh Shorts</h4>
+                <div class="col-4 col-4_products">
+                    <img src="./assest/images/tên spham-màu nha/Tee/Selflove_Tee___White-removebg-preview.png" alt="">
+                    <h4>White Selflove Tee</h4>
                     <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -129,11 +171,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <p>$50.00</p>
+                    <p>250.000 VND </p>
                 </div>
-                <div class="col-4">
-                    <img src="/assest/images/web1/web/Nike Sportswear/áo nike xanh 1080-2.png" alt="">
-                    <h4>Nike Sportswear</h4>
+                <div class="col-4 col-4_products">
+                    <img src="./assest/images/tên spham-màu nha/Tee/Doraemon Tee _ Black.png" alt="">
+                    <h4>Black Doraemon Tee</h4>
                     <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -141,53 +183,93 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p>$50.00</p>
+                    <p>300.000 VND</p>
                 </div>
             </div>
         </div>
+        <div class="page-btn" style="text-align: center ;">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
     </div>
+</div>
+    <!-- Footer -->
+    <div id="social-media">
+        <div class="social-container">
+            <p> FIND US ON SOCIAL MEDIA </p>
+            <div class="social-icons">
+                <a><img src="./assest/images/about/facebook-icon.png" alt=""></a>
+                <a><img src="./assest/images/about/instagram-icon.png" alt=""></a>
+                <a><img src="./assest/images/about/linkedin-icon.png" alt=""></a>
+                <a><img src="./assest/images/about/snapchat-icon.png" alt=""></a>
+                <a><img src="./assest/images/about/twitter-icon.png" alt=""></a>
+                <a><img src="./assest/images/about/whatsapp-icon.png" alt=""></a>
+            </div>
+        </div>
     </div>
-    <!----------- footer ----------->
-    <div class="footer" id="footer">
+
+    <div id="footer">
+        <img src="./assest/images/about/wave2.png" alt="" class="footer-img">
         <div class="footer-container">
             <div class="row">
-                <div class="footer-col-1">
-                    <h3>Downloand Our App</h3>
-                    <p>Downloand App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="/assest/images/play-store.png">
-                        <img src="/assest/images/app-store.png">
-                    </div>
+                <div class="col-4 footer-box">
+                    <img src="./assest/images/web/sg4__3_-removebg-preview.png" alt="">
+                    <p>Sự đầu tư từ chất lượng đóng gói, bao bì sản phẩm đến mỗi thước phim, hình ảnh cho tới cách làm chủ được nghệ thuật sắc màu và chỉn chu trong từng chi tiết đã đưa chúng tôi trở thành một trong những thương hiệu thời trang Streetwear được giới trẻ yêu thích, tin dùng hàng đầu tại Việt Nam.</p>
                 </div>
-                <div class="footer-col-2">
-                    <img src="/assest/images/web/sg4__3_-removebg-preview.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and
-                        Benefits of Sports Accessible to the Many.
-                    </p>
+                <div class="col-4 footer-box">
+                    <p><b> CONTACT US </b></p>
+                    <p><i class="ti ti-location-pin"></i>Việt Nam, Thành phố Hồ Chí Minh</p>
+                    <p><i class="ti ti-mobile"></i>+84 123456789</p>
+                    <p><i class="ti ti-email"></i>ddht@gmail.com</p>
+                </div> 
+                <div class="col-4 footer-box">
+                    <p><b> SUBSCRIBE NEWSLETTER </b></p>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    <button type="button" class="btn btn-footer">Subscribe</button>
                 </div>
-                <div class="footer-col-3">
-                    <h3>Use full Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
         </div>
     </div>
+
+    <!-- modal -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <header class="modal-header">
+                <h3 class="modal-title">TÌM KIẾM SẢN PHẨM</h3>
+            </header>
+            
+            <div class="modal-body">
+                <form action="" class="search-bar">
+                    <input type="text" name="" placeholder="search anything">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="search-extend">
+                    <select id="brandsearch">
+                        <option value="">Tất cả</option>
+                        <option value="Áo">Áo</option>
+                        <option value="Quần">Quần</option>
+                        <option value="Phụ kiện">Phụ kiện</option>
+                    </select>
+                    <div> 
+                        <input type="text" id="priceform" style="border:1px solid #ccc" placeholder="Giá từ"> &mdash; 
+                        <input type="text" id="priceto" style="border:1px solid #ccc" placeholder="Đến"></div>
+                    </div>
+                </div>
+                
+             
+        </div>
+    </div>
+
+    <div id="toast"></div>
+
+    <div>
+
+    <script src="./assest/js/toast.js"></script>
     <!-- ---js for toggle menu ----->
     <script>
         var MenuItems = document.getElementById("MenuItems");
@@ -203,30 +285,91 @@
         }
     </script>
 
+     <!-- modal search jaavascript -->
+     <script>
+        const buyBtn = document.querySelector('.js-search');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+        function showSearch() {
+            modal.classList.add('open');
+        }
+        function hideSearch() {
+            modal.classList.remove('open');
+        }
+
+        buyBtn.addEventListener('click',showSearch);
+
+        modalClose.addEventListener('click',hideSearch);
+
+        modal.addEventListener('click',hideSearch);
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation();
+        })
+    </script>
 <!-- js for product gallery -->
     <script>
         var productImg = document.getElementById("productImg");
         var SmallImg = document.getElementsByClassName("small-img");
-
         SmallImg[0].onclick = function()
         {
             productImg.src = SmallImg[0].src;
+            name = document.getElementById("name").innerHTML = "Green";
         }
 
         SmallImg[1].onclick = function()
         {
             productImg.src = SmallImg[1].src;
+            name = document.getElementById("name").innerHTML = "Yellow";
         }
 
         SmallImg[2].onclick = function() 
         {
             productImg.src = SmallImg[2].src;
+            name = document.getElementById("name").innerHTML = "Red";
         }
         SmallImg[3].onclick = function() 
         {
             productImg.src = SmallImg[3].src;
+            name = document.getElementById("name").innerHTML = "Black";
         }
     </script>
 
+    <!-- sticky -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+     <!-- toast -->
+     <script>
+        function showSuccessToast() {
+          toast({
+            title: "Thành công!",
+            message: "Bạn đã thêm sản phẩm vào giỏ hàng",
+            type: "success",
+            duration: 5000
+          });
+        }
+      
+        function showErrorToast() {
+          toast({
+            title: "Thất bại!",
+            message: "Có lỗi xảy ra, vui lòng liên hệ quản trị viên.",
+            type: "error",
+            duration: 5000
+          });
+        }
+      </script>
 </body>
 </html>

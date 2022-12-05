@@ -20,7 +20,23 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="header__navbar">
+            <div class="header__topnavbar" style="background-color: #000">
+                <div class="header-promotion">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>DAILY SALE UP TO 15% PLUSCLUB, COLORFUL PAINT TEE</span> 
+                </div>
+                
+                    <div class="header-user-name">
+                        <div class="header-login">
+                            <a href="./account.html"><p>LOGIN</p></a>
+                        </div>
+                        <div class="header-register">
+                            <a href="./account.html"><p>REGISTER</p></a>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="header__navbar" id="myHeader">
                 <div class="header__logo">
                     <a href="index.html"><img src="./assest/images/web/sg4-removebg-preview.png" alt="logo" width="125px">
                     </a>
@@ -28,234 +44,402 @@
                     <nav class="navbar">
                         <ul id="MenuItems" class="header__navbar-list">
                             <li><a href="index.html">TRANG CHỦ</a></li>
-                            <li><a href="products.html">ÁO</a></li>
+                            <li><a href="products-shirt.html">ÁO</a></li>
                             <li><a href="products-pants.html">QUẦN</a></li>
                             <li><a href="products-accessories.html">PHỤ KIỆN</a></li>
-                            <li><a href="">LIÊN HỆ</a></li>
                         </ul>
                     </nav>
-                <a href="account.html"><button style="border:none" class="icon-user"><img src="/assest/images/icons8-user-50.png"  width="30px" height="30px""></button></a>
-                <a href="cart.html"><button style="border:none" ><img src="/assest/images/icons8-shopping-cart-50.png" width="30px" height="30px""></button></a>
-                <button style="border:none" class="js-search" ><img src="/assest/images/icons8-search-50.png" width="30px" height="30px""></button>
-                <img src="/assest/images/menu.png" class="menu-icon"
+                <a href="account.html"><button style="border:none" class="icon-user"><i class="fa-solid fa-user"></i></button></a>
+                <a href="cart.html"><button style="border:none" ><i class="fa-solid fa-cart-shopping"></i></button></a>
+                <button style="border:none" class="js-search" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                <img src="./assest/images/menu.png" class="menu-icon"
                 onclick="menutoggle()">
             </div>
+            <div class="header_botnavbar">
+                <ul class="bot-nav-list">
+                    <li class="bot-nav-items">
+                        <a href="./aboutus.html">Về chúng tôi</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="./stores.html">Danh sách cửa hàng</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="#categories">Bộ sưu tập</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="">Offer</a>
+                    </li>
+                    <li class="bot-nav-items">
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+
+            
         </div>
     </header>
     <div class="products">
         <div class="container">
-            <div class="row row-2">
+            <div class="row row-2" style="margin-top: 20px;">
                 <div class="div">
                     <h2>SẢN PHẨM</h2>
                     <p style="font-size: 12px; font-weight:200 ;">Trang chủ / Áo</p>
                 </div>
-                <select>
-                    <option>Default Shorting</option>
-                    <option>Short by price</option>
-                    <option>Short by popularity</option>
-                    <option>Short by rating</option>
-                    <option>Short by sale</option>
-                </select>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <a href="product-details.html"><img src="/assest/images/product-1.jpg" alt=""></a>
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="products-search">
+                    <div class="box-search">
+                        <div class="box-search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="box-search-input">
+                            <input type="text" placeholder="Search" id="box-search-input">
+                        </div>
+                        <span class="box-search-clear" onclick="document.getElementById('box-search-input').value =' '">
+                            <i class="fa-regular fa-x"></i>
+                        </span>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-2.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="box-search-extend">
+                        <select id="brandsearch">
+                            <option value="">Màu sắc</option>
+                            <option value="Áo">Đen</option>
+                            <option value="Quần">Trắng</option>
+                            <option value="Phụ kiện">Xanh</option>
+                            <option value="Phụ kiện">Tím</option>
+                            <option value="Phụ kiện">Vàng</option>
+                            <option value="Phụ kiện">Xám</option>
+                            <option value="Phụ kiện">Kem</option>
+                        </select>
+                        <div style="margin-left: 10px;"> 
+                            <input type="text" id="priceform" style="border:1px solid #ccc" placeholder="Giá từ"> &mdash; 
+                            <input type="text" id="priceto" style="border:1px solid #ccc" placeholder="Đến"></div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-3.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-4.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p>$50.00</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <img src="/assest/images/product-5.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-4_products">
+                        <a href="product-details.html"><img src="./assest/images/tên spham-màu nha/Tee/Capsule Tee _ Pink.png " alt=""></a>
+                        <h4>Pink Capsule Tee</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-6.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Dream_Come_True_Tee___Blue-removebg-preview.png" alt="">
+                        <h4>Blue Dream Come True Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-7.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Doraemon Cat Tee _ Grey.png" alt="">
+                        <h4>Grey Doraemon Cat Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-8.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Doraemon Tee _ Black.png" alt="">
+                        <h4>Black Doraemon Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>350.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img src="/assest/images/product-9.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="row">
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Floral Tee _ Baby Blue.png" alt="">
+                        <h4> Blue Baby Floral Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-10.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Inside Out Tee _ Black.png" alt="">
+                        <h4>Black Inside Out Tee k</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>350.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-11.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Logo 2.0 Tee _ Green.png" alt="">
+                        <h4>Green Logo 2.0 Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
-                </div>
-                <div class="col-4">
-                    <img src="/assest/images/product-12.jpg" alt="">
-                    <h4>Red Printed T-Shirt</h4>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Map_Tee___Cream-removebg-preview.png" alt="">
+                        <h4>Cream Map Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>$50.00</p>
                 </div>
-            </div>
-            <div class="page-btn">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>&#8594</span>
+                <div class="row">
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Melt_Face_Tee___White-removebg-preview.png" alt="">
+                        <h4>White Melt Face Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Popular Tee _ Dark Teal.png" alt="">
+                        <h4>Dark Teal Popular Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Selflove_Tee___White-removebg-preview.png" alt="">
+                        <h4>White Selflove Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>300.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-4_products">
+                        <img src="./assest/images/tên spham-màu nha/Tee/Travel Tee _ Cream.png" alt="">
+                        <h4>Cream Travel Tee </h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>350.000 VND</p>
+                        <div class="product-btn">
+                            <div class="option">
+                                <div class="add separate">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div style= "display: inline-block;"onclick="showSuccessToast();">Thêm vào giỏ hàng</div>
+                                </div>
+                                <div class="infor">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <a href="./product-details.html" style="color: #fff ;">Thông tin chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-btn" style="text-align: center ;">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594</span>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+        </div>
     <!----------- footer ----------->
-    <div class="footer" id="footer">
+    <div id="footer">
+        <img src="./assest/images/about/wave2.png" alt="" class="footer-img">
         <div class="footer-container">
             <div class="row">
-                <div class="footer-col-1">
-                    <h3>Downloand Our App</h3>
-                    <p>Downloand App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="/assest/images/play-store.png">
-                        <img src="/assest/images/app-store.png">
-                    </div>
+                <div class="col-4 footer-box">
+                    <img src="./assest/images/web/sg4__3_-removebg-preview.png" alt="">
+                    <p>Sự đầu tư từ chất lượng đóng gói, bao bì sản phẩm đến mỗi thước phim, hình ảnh cho tới cách làm chủ được nghệ thuật sắc màu và chỉn chu trong từng chi tiết đã đưa chúng tôi trở thành một trong những thương hiệu thời trang Streetwear được giới trẻ yêu thích, tin dùng hàng đầu tại Việt Nam.</p>
                 </div>
-                <div class="footer-col-2">
-                    <img src="/assest/images/web/sg4__3_-removebg-preview.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and
-                        Benefits of Sports Accessible to the Many.
-                    </p>
+                <div class="col-4 footer-box">
+                    <p><b> CONTACT US </b></p>
+                    <p><i class="ti ti-location-pin"></i>Việt Nam, Thành phố Hồ Chí Minh</p>
+                    <p><i class="ti ti-mobile"></i>+84 123456789</p>
+                    <p><i class="ti ti-email"></i>ddht@gmail.com</p>
+                </div> 
+                <div class="col-4 footer-box">
+                    <p><b> SUBSCRIBE NEWSLETTER </b></p>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    <button type="button" class="btn btn-footer">Subscribe</button>
                 </div>
-                <div class="footer-col-3">
-                    <h3>Use full Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
         </div>
     </div>
     <!-- ---js for toggle menu ----->
@@ -270,6 +454,29 @@
             else {
                 MenuItems.style.maxHeight = "0px"
             }
+        }
+    </script>
+    <!-- sticky -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+        <!-- search-box -->
+    <script>
+        const icon = document.querySelector('.box-search-icon');
+        const search = document.querySelector('.box-search');
+        icon.onclick = function() {
+            search.classList.toggle('active');
         }
     </script>
 </body>
