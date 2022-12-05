@@ -8,7 +8,7 @@ const users = [{
     taikhoan: "danh",
     matkhau:"123"
 }]
-console.log("123");
+
 var userInput = document.getElementById("tk");
 var passwordInput = document.getElementById("mk");
 var input = document.getElementById("input");

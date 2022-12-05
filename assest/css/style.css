@@ -27,7 +27,7 @@ a {
     background-color: rgba(255,255,255,0.2);
 }
 .header-container {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -70,36 +70,23 @@ a {
     line-height: 12px;
 }
 
-.header-user-name {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-login,
-.header-register {
-    padding: 0 5px;
-} 
-
-.header-login p,
-.header-register p {
+.header-admin {
     font-size: 8px;
+    display: flex;
+    width: 50px;
+    padding: 0 20px ;
+}
+
+.header-admin:hover {
+    opacity: 0.6;
+}
+
+.header-admin i {
     color: #fff;
+    margin-right:5px ;
 }
 
-.header-login {
-    position: relative;
-}
 
-.header-login::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -1px;
-    width: 1px;
-    height: 14px;
-    background-color: rgb(255, 255, 255);
-    transform: translateY(-50%);
-}
 
 /* header_botnav */
 .header_botnavbar {
@@ -604,26 +591,13 @@ h4 {
     padding: 1px;
     font-size: 12px;
 }
- /* ------offer----- */
-.offer {
-    background: radial-gradient(#fff,#ffd6d6);
-    margin-top:  80px;
-    padding: 30px 0;
-}
-
-
-.col-2 .offer-img {
-    padding: 50px;
-}
 
 small {
     color: #555;
 }
 
 /* ------testtimonial------ */
-.testimonial {
-    padding: 100px 0;
-}
+
 
 .testimonial .col-3 {
     text-align: center;

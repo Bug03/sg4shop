@@ -33,7 +33,7 @@ a {
     color: white;
     text-align: center;
     line-height: 70px;
-    background: #063146;
+    background-color: #ff523b;
     user-select: none;
 }
 
@@ -75,6 +75,7 @@ label #admin-icon-bar {
     font-size: 35px;
     color: #fff;
     padding: 6px 12px;
+    border-radius: 8px;
 }
 
 label #admin-icon-cancel {
@@ -117,6 +118,14 @@ label #admin-icon-cancel {
     border-radius: 8px;
     background-color: #555;
     color: #fff;
+}
+
+.admin-user p {
+    padding: 0 40px;
+}
+
+.admin-user p:hover {
+    opacity: 0.6;
 }
 
 .container-products_admin{
@@ -231,7 +240,7 @@ form .btn--admin {
 }
 
 .total-icon {
-    background-color: rgb(147, 252, 252);
+    background-color: #c1e7ff;
     border-radius: 3px;
     border: 1px solid #333;
     padding: 20px;
@@ -254,7 +263,7 @@ form .btn--admin {
 .total-wrap {
     max-width: 1080px;
     padding: 0 25px;
-    margin: 80px auto;
+    margin: 80px auto -80px;
     display: flex;
 }
 
@@ -270,9 +279,15 @@ form .btn--admin {
 .total-desc {
     display: flex;
     margin-top: 4px;
+    color: #fff;
+    align-items: center;
+
 }
 
 
 .total-desc i {
     margin-right: 5px;
+    background-color: #94d8cb;
+    padding: 2px;
+    border-radius: 50%;
 }

@@ -30,7 +30,7 @@
             <li><a href="./product-admin.html"><i class="fa-solid fa-shirt"></i>Quần áo</a></li>
             <li><a href="./bill.html"><i class="fa-solid fa-wallet"></i>Đơn hàng</a></li>
             <li><a href="./user.html"><i class="fa-solid fa-user"></i>Khách hàng</a></li>
-            <li><a href=""><i class="fa-solid fa-sitemap"></i>Quản lí thông tin</a></li>
+            <li><a href="./dashboard.html"><i class="fa-solid fa-sitemap"></i>Quản lí thông tin</a></li>
         </ul>
     </div>
     <header class="header">
@@ -38,6 +38,7 @@
             <div class="header__navbar header__navbar-admin">
                 <div class="admin-user">
                     <span class="admin-user-name">Nguyễn Cảnh Hoàng Danh</span>
+                    <p><a href="../index.html" class="logout" style="color: #fff; margin-top: 20px;">Đăng xuất</a></p>
                 </div>
             </div>
         </div>
@@ -45,6 +46,26 @@
     
     <div class="products-admin">
         <div class="container-products_admin">
+            <div class="products-wrap-2">
+                <div class="container-search-products">
+                    <div class="products-search-wrap">
+                        <h2 class="products-title">TÌM KIẾM</h2>
+                        <form action="">
+                            <label for="">Tên khách hàng</label>
+                            <input type="text">
+                            <label for="">Ngày đăng kí</label>
+                            <input type="date">
+                            <label for="">Loại</label>
+                            <select name="" id="" style="border-color:#ccc ;">
+                                <option value="">Thành viên</option>
+                                <option value="">Bạch kim</option>
+                                <option value="">Vàng</option>
+                                <option value="">Bạc</option>
+                            </select>
+                        </form> 
+                    </div>
+                </div>
+            </div>
             <div class="products-wrap">
                 <h2 class="products-title">DANH SÁCH KHÁCH HÀNG</h2>
                 <table>
@@ -52,6 +73,7 @@
                         <th>STT</th>
                         <th>Khách hàng</th>
                         <th>Tên đăng nhập</th>
+                        <th>Thành viên</th>
                         <th>Ngày đăng kí</th>
                         <th>Xóa</th>
                     </tr>
@@ -66,7 +88,10 @@
                             <p>ngdank_</p>
                         </td>
                         <td>
-                            <p>20-11-2022</p>
+                            <p>Bạch kim</p> 
+                        </td>
+                        <td>
+                            03-11-2019
                         </td>
                         <td>
                             <a href="" class="cart-btn--remove btn btn--admin" style="margin-right:-10px ;">Xóa</a>
@@ -77,30 +102,16 @@
                             2
                         </td>
                         <td>
-                            <p>Tôn Đông Dương</p>
-                        </td>
-                        <td>
-                            <p>zZzboycutevipro03zZz</p>
-                        </td>
-                        <td>
-                            <p>19-3-2022</p>
-                        </td>
-                        <td>
-                            <a href="" class="cart-btn--remove btn btn--admin" style="margin-right:-10px ;">Xóa</a>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td>
-                            3
-                        </td>
-                        <td>
                             <p>Yên Bùi Thái Tuấn</p>
                         </td>
                         <td>
                             <p>boydaclaksitinhcodon</p>
                         </td>
                         <td>
-                            <p>10-2-2022</p>
+                            <p>Vàng</p>
+                        </td>
+                        <td>
+                            <p>10-4-2020</p>
                         </td>
                         <td>
                             <a href="" class="cart-btn--remove btn btn--admin" style="margin-right:-10px ;">Xóa</a>
@@ -109,7 +120,7 @@
                     </tr>        
                     <tr>
                         <td>
-                            4
+                            3
                         </td>
                         <td>
                             <p>Lê Thị Thanh Huyền</p>
@@ -118,12 +129,35 @@
                             <p>congchuamongmohaykhox</p>
                         </td>
                         <td>
-                            <p>19-12-2021</p>
+                            <p>Vàng</p>
+                        </td>
+                        <td>
+                            <p>28-3-2021</p>
                         </td>
                         <td>
                             <a href="" class="cart-btn--remove btn btn--admin" style="margin-right:-10px ;">Xóa</a>
                         </td>
-                    </tr>                
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            <p>Tôn Đông Dương</p>
+                        </td>
+                        <td>
+                            <p>zZzboycutevipro03zZz</p>
+                        </td>
+                        <td>
+                            <p>Bạc</p>
+                        </td>
+                        <td>
+                            <p>26-11-2022</p>
+                        </td>
+                        <td>
+                            <a href="" class="cart-btn--remove btn btn--admin" style="margin-right:-10px ;">Xóa</a>
+                        </td>
+                    </tr>                 
                 </table>
                 <div class="page-btn page-btn--admin">
                     <span>1</span>
