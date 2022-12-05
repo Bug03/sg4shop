@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendors/css/normalize.css">
     <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="./assest/images/about/themify-icons-font/themify-icons/themify-icons.css">
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -415,7 +416,7 @@
     <!----------- footer ----------->
     <div id="footer">
         <a href="product-details-2.html""> <img src="./assest/images/about/wave2.png" alt="" class="footer-img">
-        <div class</href>="footer-container">
+        <div class="footer-container">
             <div class="row">
                 <div class="col-4 footer-box">
                     <img src="./assest/images/web/sg4__3_-removebg-preview.png" alt="">
@@ -434,6 +435,40 @@
                 </div>
         </div>
     </div>
+     <!-- modal -->
+     <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <header class="modal-header">
+                <h3 class="modal-title">TÌM KIẾM SẢN PHẨM</h3>
+            </header>
+
+            <div class="modal-body">
+                <form action="" class="search-bar">
+                    <input type="text" name="" placeholder="search anything">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="search-extend">
+                    <select id="brandsearch">
+                        <option value="">Tất cả</option>
+                        <option value="Áo">Áo</option>
+                        <option value="Quần">Quần</option>
+                        <option value="Phụ kiện">Phụ kiện</option>
+                    </select>
+                    <div>
+                        <input type="text" id="priceform" style="border:1px solid #ccc" placeholder="Giá từ">
+                        &mdash;
+                        <input type="text" id="priceto" style="border:1px solid #ccc" placeholder="Đến">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
     <div id="toast">
 
     </div>
@@ -451,6 +486,29 @@
                 MenuItems.style.maxHeight = "0px"
             }
         }
+    </script>
+     <!-- modal search jaavascript -->
+     <script>
+        const buyBtn = document.querySelector('.js-search');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+        function showSearch() {
+            modal.classList.add('open');
+        }
+        function hideSearch() {
+            modal.classList.remove('open');
+        }
+
+        buyBtn.addEventListener('click', showSearch);
+
+        modalClose.addEventListener('click', hideSearch);
+
+        modal.addEventListener('click', hideSearch);
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
     </script>
     <!-- sticky -->
     <script>
